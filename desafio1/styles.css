@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #eee;
+    font-family: sans-serif;
+    color: #333;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  #img-div {
+    padding: 30px 100px;
+    background-color: #fff;
+  }
+  
+  figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  li {
+    max-width: 550px;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+  
+  p {
+    max-width: 550px;
+  }
+  
+  #text-citation {
+      font-style: oblique;
+  }
+  
+  #autor {
+    width: 100%;
+    font-style: oblique;
+  }
+  

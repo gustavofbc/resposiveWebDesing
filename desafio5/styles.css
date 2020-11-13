@@ -1,0 +1,210 @@
+:root {
+    --white: #f0f0f0;
+    --red: #be3144;
+    --blue: #45567d;
+    --gray: #303841;
+    --gray-dark: #313041;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #f0f0f0;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4.2rem;
+  }
+  
+  h2 {
+    color: var(--white);
+    font-size: 2.2rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  hr {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+  } 
+  
+  
+  /* Navbar */
+  nav {
+    width: 100%;
+    background-color: var(--red);
+    
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 1rem;
+  }
+  
+  /* --- */
+  
+  /* welcome */
+  #welcome-section {
+    height: 100vh;
+    weight: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  }
+  
+  #welcome-section p {
+    color: var(--red);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  /* --- */
+  
+  /* projects */
+  #projects {
+    height: 100vh;
+    weight: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    background-color: var(--blue);
+  }
+  
+  .projects-card {
+    margin: 10px;
+    background-color: var(--gray);
+    padding: 10px;
+    transition: 2s;
+  }
+  
+  .projects-card:hover {
+    background-color: var(--gray-dark);
+  }
+  
+  .projects-card:hover .code{
+     color: tomato;
+  }
+  
+  .code {
+    color: var(--gray);
+    transition: 1s;
+  }
+  
+  
+  .projects-card img {
+    width: 90%;
+  }
+  
+  .projects-card a {
+    color: var(--white);
+    text-decoration: none;
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  /* --- */
+  
+  /* contact */
+  #contact {
+    height: 80vh;
+    weight: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    background-color: var(--gray);
+  }
+  
+  #contact p {
+    color: var(--white);
+    font-style: italic;
+  }
+  
+  #contact a {
+    text-decoration: none;
+    color: var(--white);
+  }
+  
+  #contact a:hover {
+    color: var(--white) !important;
+  }
+  
+  .github {
+    animation-name: github;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+  }
+  
+  @keyframes github {
+    0%   {color: var(--white); left:0px; top:0px;}
+    100%   {color: var(--red); left:0px; top:50px;}
+    
+  }
+  
+  /* --- */
+  
+  footer {
+    widht: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--gray);
+    border-top: 4px solid;
+    color: var(--red);
+    padding: 30px;
+  }
+  
+  footer p {
+    color: var(--white);
+    padding: 0px 10px;
+  }
+  
+  footer a {
+    color: var(--white);
+    text-decoration: none;
+    transition: 1s;
+  }
+  
+  footer a:hover {
+    color: var(--red);
+  }
+  
+  @media(min-width: 750px) {
+    #projects{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:center;
+    }
+    
+    .projects-card {
+      max-width: 60%;
+    }
+  }
